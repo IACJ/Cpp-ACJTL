@@ -61,7 +61,7 @@ void Sushu::shaifa(){
 
 	while (p <= half) {
 		append(p);
-		for (int i = 2; p*i <= maxInt; i++) {
+		for (int i = p; p*i <= maxInt; i++) {
 			mark[p*i] = false;
 		}
 		p++;

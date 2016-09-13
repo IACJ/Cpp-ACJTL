@@ -151,6 +151,7 @@
   <ItemGroup>
     <ClInclude Include="AList.h" />
     <ClInclude Include="list_ADT.h" />
+    <ClInclude Include="LList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

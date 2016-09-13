@@ -7,8 +7,8 @@ using namespace std;
 /**************************************************************
 |			*Created-time: 2016-9-9                                            
 |			*Created-by: ACJ                                                        
-|			*escription: Array-based list                                       
- *************************************************************/
+|			*Description: Array-based list                                       
+**************************************************************/
 template <typename Elem> //Array-based list
 class AList : public List<Elem> {
 private:

@@ -152,10 +152,10 @@ int main() {
 	}
 	delete Lp;
 	Lp = NULL;
-	cout << "--------AList Test5 ends---------" << endl << endl << endl;
+	cout << "--------LList Test5 ends---------" << endl << endl << endl;
 
-	system("pause");
-	return 0;
+	//system("pause");
+	//return 0;
 	cout << "---------AList Test1 begins--------" << endl;
 	// test the copy-construct, a list of list, append, remove 
 	AList<int>* p1 = new AList<int>;

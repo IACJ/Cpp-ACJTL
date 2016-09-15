@@ -25,10 +25,10 @@ public:
 
 
 template <typename Elem> //Doubly Linked List
-class LList /*: public List<Elem> */{
+class LList : public List<Elem> {
 private:
 	int m_length;                  //Actual elem count
-	int m_leftLength;            //Actual elem count
+	int m_leftLength;            //Actual elem count on the left
 	Link<Elem>* fence;	   //Position of fence
 	Link<Elem>* head;    //Point to list header
 	Link<Elem>* tail;       //Point to last Elem

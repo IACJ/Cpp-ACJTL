@@ -147,6 +147,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AQueue.h" />
+    <ClInclude Include="LQueue.h" />
     <ClInclude Include="queue_ADT.h" />
   </ItemGroup>
   <ItemGroup>

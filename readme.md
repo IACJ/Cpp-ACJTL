@@ -11,6 +11,7 @@
 
 ##这是需要修改的列表：
 1. bigInt类(未完待续)
+2. mergeSort(已完成AMergeSort)
 
 ##这是未完成列表：
 

@@ -1,0 +1,5 @@
+﻿  test_main.cpp
+c:\users\apple1\documents\visual studio 2015\projects\acjtl\hashing\hashdict.h(86): warning C4002: “assert”宏的实参太多
+c:\users\apple1\documents\visual studio 2015\projects\acjtl\hashing\hashdict.h(99): warning C4002: “assert”宏的实参太多
+  Hashing.vcxproj -> C:\Users\apple1\Documents\Visual Studio 2015\Projects\ACJTL\Hashing\Debug\Hashing.exe
+  Hashing.vcxproj -> C:\Users\apple1\Documents\Visual Studio 2015\Projects\ACJTL\Hashing\Debug\Hashing.pdb (Full PDB)

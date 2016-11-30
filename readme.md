@@ -8,6 +8,7 @@
 4. queue类(AQueue,LQueue)
 5. binary tree
 6. qsort(迷你快排)
+7. Hashing Dictionary(简单模式)
 
 ##这是需要修改的列表：
 1. bigInt类(未完待续)

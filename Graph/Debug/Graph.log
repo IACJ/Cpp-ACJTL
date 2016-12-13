@@ -1,0 +1,6 @@
+﻿  test_main.cpp
+c:\users\apple1\documents\visual studio 2015\projects\acjtl\graph\graph_matrix.h(29): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\apple1\documents\visual studio 2015\projects\acjtl\graph\graph_matrix.h(30): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\apple1\documents\visual studio 2015\projects\acjtl\graph\graph_list.h(56): warning C4018: “<”: 有符号/无符号不匹配
+  Graph.vcxproj -> C:\Users\apple1\Documents\Visual Studio 2015\Projects\ACJTL\Graph\Debug\Graph.exe
+  Graph.vcxproj -> C:\Users\apple1\Documents\Visual Studio 2015\Projects\ACJTL\Graph\Debug\Graph.pdb (Full PDB)

@@ -20,4 +20,7 @@ int main() {
 	cout << g2.getEdge(1, 5).getVert() << endl;
 	cout << g2.getEdge(2, 5).getVert() << endl;
 
+	g2.first(2);
+	g2.showLists();
+
 }

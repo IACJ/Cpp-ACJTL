@@ -1,23 +1,10 @@
 #pragma once
 #include<iostream>
 #include<algorithm>
+#include<list>
 using namespace std;
 
-//data structure    value-height
-template <typename Elem>
-class Value_Level {
-public:
-	Elem value;
-	int level;
-	static int i;
-	static Value_Level<Elem>* list;
-public:
-	static int compare(Value_Level<Elem> e1, Value_Level<Elem> e2) {
-		return e1.level < e2.level;
-	}
-};
-int Value_Level<int>::i = 0;
-Value_Level<int>* Value_Level<int>::list;
+
 
 // Binary tree node class
 template <typename Elem>
@@ -56,7 +43,7 @@ public:
 	void inorder(BinaryNode<Elem>* subroot);
 	void postorder(BinaryNode<Elem>* subroot);
 	void leveloder();
-	void leveloder_help(BinaryNode<Elem>* subroot,int level);
+
 	int count(BinaryNode<Elem>* subroot);
 	int height(BinaryNode<Elem>* subroot);
 	void visit(BinaryNode<Elem>* subroot) {
@@ -109,25 +96,30 @@ int LBinaryTree<Elem>::height(BinaryNode<Elem>* subroot) {
 
 template<typename Elem>
 void LBinaryTree<Elem>::leveloder(){
-	int n = count(root);
-	Value_Level<Elem>::list = new Value_Level<Elem>[n];
-	Value_Level<Elem>::i = 0;
-	leveloder_help(root,0);
-	stable_sort(Value_Level<Elem>::list, Value_Level<Elem>::list +n,Value_Level<Elem>::compare);
-	for (int i = 0; i < n; i++){
-		cout << Value_Level<Elem>::list[i].value;
-		cout << "  ";
+
+	list< BinaryNode<Elem>* > queue;
+
+	if (root == NULL) {
+		return;   //Empty tree;
 	}
+
+	queue.push_back(root);
+
+	while (!queue.empty()){
+		BinaryNode<Elem>* subroot = queue.front();
+		queue.pop_front();
+
+		visit(subroot);
+
+		if (subroot->lc != NULL) {
+			queue.push_back(subroot->lc);
+		}
+		if (subroot->rc != NULL) {
+			queue.push_back(subroot->rc);
+		}
+	}
+
 	cout << endl;
 }
 
-template<typename Elem>
-void LBinaryTree<Elem>::leveloder_help(BinaryNode<Elem>* subroot,int level){
-	if (subroot == NULL) return;
-	Value_Level<Elem>::list[Value_Level<Elem>::i].level = level;
-	Value_Level<Elem>::list[Value_Level<Elem>::i].value = subroot->it;
-	Value_Level<Elem>::i++;
-	leveloder_help(subroot->lc, level + 1);
-	leveloder_help(subroot->rc, level + 1);
-	return ;
-}
+

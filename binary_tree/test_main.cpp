@@ -30,10 +30,10 @@ int main() {
 	aTree->postorder(aTree->root);
 	cout << endl<<endl;
 	
-	cout << "Ï°Ìâ5.7-levelorder :";
+	cout << "-levelorder :";
 	aTree->leveloder();
 	cout << endl;
 
-	cout << "Ï°Ìâ5.8-height : " << aTree->height(aTree->root) << endl;
-	cout << "Ï°Ìâ5.9-count : " << aTree->count(aTree->root) << endl;
+	cout << "-height : " << aTree->height(aTree->root) << endl;
+	cout << "-count : " << aTree->count(aTree->root) << endl;
 }
